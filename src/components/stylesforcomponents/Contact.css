@@ -1,0 +1,68 @@
+/* Contact Container */
+.contact-container {
+    text-align: center;
+    padding: 150px;
+  }
+  
+  /* Heading */
+  .contact-container h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+  }
+  
+  /* Paragraph */
+  .contact-container p {
+    font-size: 20px;
+    margin-bottom: 100px;
+  }
+  
+  /* Form */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Form Group */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  /* Label */
+  .form-group label {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  /* Input and Textarea */
+  .form-group input, 
+  .form-group textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  /* Submit Button */
+  button[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Submit Button Hover */
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
