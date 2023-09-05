@@ -5,14 +5,12 @@ const About = () => {
   return (
     <div className="about-container">
       <h2 className="about-heading">ABOUT ME</h2>
-      <div className='small-intro'>
+      <div className="small-intro">
         <p>
-            I am a MERN stack web developer with a passion for creating web applications that deliver a great user experience.
-          </p>
-        </div>
+          I am a MERN stack web developer with a passion for creating web applications that deliver a great user experience.
+        </p>
+      </div>
       <div className="content-container">
-        
-       
         <div className="details">
           <p>
             As a web developer with expertise in the MERN stack, I am passionate about building robust and scalable web applications that deliver exceptional user experiences.
@@ -35,26 +33,32 @@ const About = () => {
             .
           </p>
         </div>
-        <div className="skills">
-          <h3>My Skills:</h3>
-          <div className="skill-buttons">
+        <div className="side-content">
+          <div className="skills">
+            <h3>My Skills</h3>
+            <div className="skill-buttons">
             <button className="skill-button">HTML 5</button>
             <button className="skill-button">CSS 3</button>
             <button className="skill-button">JavaScript</button>
-            <button className="skill-button">MongoDB</button>
-            <button className="skill-button">Express.js</button>
             <button className="skill-button">React</button>
-            <button className="skill-button">Node.js</button>
-            <button className="skill-button">WordPress</button>
-            <button className="skill-button">Git</button>
-            <button className="skill-button">GitHub</button>
-            <button className="skill-button">Postman</button>
-            <button className="skill-button">Figma</button>
-            <button className="skill-button">AWS Cloud</button>
-            <button className="skill-button">Python</button>
-            <button className="skill-button">GraphQL</button>
-            <button className="skill-button">SQL</button>
             <button className="skill-button">React Native</button>
+            <button className="skill-button">Express</button>
+            <button className="skill-button">Node</button>
+            <button className="skill-button">MongoDB</button>
+            <button className="skill-button">SQL basics</button>
+            <button className="skill-button">GraphQL</button>
+            </div>
+          </div>
+          <div className="tools">
+            <h3>Tools</h3>
+            <div className="tool-buttons">
+            <button className="tool-button">Git</button>
+            <button className="tool-button">GitHub</button>
+            <button className="tool-button">Jira</button>
+            <button className="tool-button">Trello</button>
+            <button className="tool-button">Wordpress</button>
+            <button className="tool-button">Postman</button>
+            </div>
           </div>
         </div>
       </div>
