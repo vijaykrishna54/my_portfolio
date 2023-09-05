@@ -1,0 +1,56 @@
+/* stylesforcomponents/About.css */
+
+.about-container {
+    text-align: center;
+    padding: 150px;
+  }
+  
+  .about-heading {
+    font-size: 35px;
+    margin-bottom: 50px;
+  }
+  
+  .content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .small-intro{
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+  
+  .details {
+    flex: 1;
+    text-align: justify;
+    padding-right: 100px;
+  }
+  
+  .skills {
+    flex: 1;
+    text-align: left;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .skill-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 30px;
+  }
+  
+  .skill-button {
+    background-color: #303031;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .skill-button:hover {
+    background-color: #815a5a;
+  }
+  
