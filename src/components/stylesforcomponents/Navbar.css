@@ -5,6 +5,9 @@
   background-color: #EAE7DC;
   color: rgb(13, 1, 1);
   padding: 10px;
+  position: sticky; /* Keep the navbar fixed at the top */
+  top: 0;
+  z-index: 100; /* Ensure the navbar appears above other content */
 }
 
 .left-content {
@@ -43,13 +46,20 @@ ul {
 li {
   font-family: sans-serif;
   font-weight: bold;
-  margin-right: 60px;
+  margin-right: 40px;
   transition: color 0.3s, font-size 0.3s; /* Add transition for color and font size */
 }
 
-li a {
-  text-decoration: none;
+li button {
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
   color: rgb(8, 0, 0);
+  text-decoration: none;
 }
 
 /* Hover styles for individual menu items */

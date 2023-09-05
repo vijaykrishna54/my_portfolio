@@ -1,9 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './stylesforcomponents/Navbar.css';
 import profilePicture from './component_images/Vijay_profile_picture.jpeg'; // Import your profile picture
 
 const Navbar = () => {
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <nav className="navbar">
       <div className="left-content">
@@ -14,16 +20,16 @@ const Navbar = () => {
       </div>
       <ul>
         <li>
-          <Link to="/">HOME</Link>
+          <button onClick={() => scrollToSection('home')}>HOME</button>
         </li>
         <li>
-          <Link to="/about">ABOUT</Link>
+          <button onClick={() => scrollToSection('about')}>ABOUT</button>
         </li>
         <li>
-          <Link to="/projects">PROJECTS</Link>
+          <button onClick={() => scrollToSection('projects')}>PROJECTS</button>
         </li>
         <li>
-          <Link to="/contact">CONTACT</Link>
+          <button onClick={() => scrollToSection('contact')}>CONTACT</button>
         </li>
       </ul>
     </nav>
