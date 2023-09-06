@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/my_portfolio/static/css/main.2756e683.css",
+    "main.js": "/my_portfolio/static/js/main.9031e4b7.js",
+    "static/js/787.128fc6e9.chunk.js": "/my_portfolio/static/js/787.128fc6e9.chunk.js",
+    "static/media/cloudy_image.jpeg": "/my_portfolio/static/media/cloudy_image.a88d501a80a8b88c23a4.jpeg",
+    "static/media/email_notifications.jpeg": "/my_portfolio/static/media/email_notifications.7866de858825f0d40921.jpeg",
+    "static/media/Vijay_profile_picture.jpeg": "/my_portfolio/static/media/Vijay_profile_picture.3ff3c110f6e11964cda5.jpeg",
+    "static/media/rainy_image.jpeg": "/my_portfolio/static/media/rainy_image.a4a1c8ec6929d3024cb1.jpeg",
+    "static/media/word_press.jpeg": "/my_portfolio/static/media/word_press.ef32a2fd34584ef90f99.jpeg",
+    "static/media/google_oauth.jpeg": "/my_portfolio/static/media/google_oauth.256f8bfce57a57ac41a8.jpeg",
+    "static/media/Weather_app.jpeg": "/my_portfolio/static/media/Weather_app.738af3033a17345f2b41.jpeg",
+    "static/media/sunny_image.jpeg": "/my_portfolio/static/media/sunny_image.31565611dbc0b8fd1bc3.jpeg",
+    "static/media/blue_pattern.jpeg": "/my_portfolio/static/media/blue_pattern.58588091ca2c15c82c69.jpeg",
+    "static/media/login_page.jpeg": "/my_portfolio/static/media/login_page.3631928956461c364447.jpeg",
+    "index.html": "/my_portfolio/index.html",
+    "main.2756e683.css.map": "/my_portfolio/static/css/main.2756e683.css.map",
+    "main.9031e4b7.js.map": "/my_portfolio/static/js/main.9031e4b7.js.map",
+    "787.128fc6e9.chunk.js.map": "/my_portfolio/static/js/787.128fc6e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2756e683.css",
+    "static/js/main.9031e4b7.js"
+  ]
+}
