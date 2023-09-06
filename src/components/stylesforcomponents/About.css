@@ -1,73 +1,95 @@
+
 .about-container {
   text-align: center;
   padding: 150px;
 }
+
 
 .about-heading {
   font-size: 35px;
   margin-bottom: 50px;
 }
 
+
 .small-intro {
+  font-family: sans-serif;
   font-size: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
+
 
 .content-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between; 
 }
 
+/* .details styles */
 .details {
   flex: 2;
-  margin-right: 20px; /* Reduce margin-right for better alignment */
+  margin-right: 1rem; /* Reduce margin-right for better alignment */
   padding-top: 0px;
-  padding-right: 50px;
-  
+  padding-right: 4rem; /* Adjust padding for better spacing */
+  font-size: 1.2rem; /* Increase font size for better readability */
+  font-family: sans-serif;
+  text-align: justify;
 }
 
+/* .details h3 styles */
+.details h3 {
+  text-align: left; /* Align the heading to the left */
+  font-size: 1.5rem; /* Increase font size for better emphasis */
+  margin-bottom: 1rem; /* Adjust margin for better spacing */
+}
+
+/* .details p styles */
 .details p {
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem; /* Adjust margin for better spacing */
 }
 
+/* .side-content styles */
 .side-content {
   flex: 1;
-  margin-right: 100px;
- 
 }
 
+/* .skills and .tools styles */
 .skills,
 .tools {
   background-color: #EAE7DC;
   border: 1px solid #EAE7DC;
   border-radius: 5px;
-  padding: 0px 20px 20px;
-  margin-bottom: 20px;
+  padding: 1rem; /* Adjust padding for better spacing */
+  margin-bottom: 2rem;
 }
 
+/* h3 styles */
 h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 1.5rem; /* Increase font size for better emphasis */
+  margin-bottom: 1rem; /* Adjust margin for better spacing */
+  margin-top: 0rem;
 }
 
+/* .skill-buttons and .tool-buttons styles */
 .skill-buttons,
 .tool-buttons {
   display: flex;
   flex-wrap: wrap;
 }
 
+/* .skill-button and .tool-button styles */
 .skill-button,
 .tool-button {
   background-color: #3f3f3f;
   color: #fff;
   border: none;
   border-radius: 5px;
-  padding: 8px 16px;
-  margin: 5px;
+  padding: 0.5rem 1rem; /* Adjust padding for better spacing */
+  margin: 0.2rem;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
+/* .skill-button:hover and .tool-button:hover styles */
 .skill-button:hover,
 .tool-button:hover {
   background-color: #0a0a0a;
