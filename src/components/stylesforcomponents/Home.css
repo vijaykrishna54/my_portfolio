@@ -14,11 +14,11 @@
   font-family: sans-serif;
 }
 
-.text-container {
+/* .text-container {
   background-color: rgba(0, 0, 0, 0.1);
   padding: 20px;
   border-radius: 10px;
-}
+} */
 
 /* Background images for different weather conditions */
 
@@ -135,4 +135,19 @@
   font-size: 2rem; /* Adjust the font size as needed */
   color: #48484a; /* Change the color to match your design */
   align-items: center;
+}
+
+.scroll-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #3f3f3f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.scroll-button:hover{
+  background-color: #0a0a0a;
 }

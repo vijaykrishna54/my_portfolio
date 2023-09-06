@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCloud, faPlus, faTimes } from '@fortawesome/free-solid-svg-icons';
 import './stylesforcomponents/Home.css';
 
+
 const Home = () => {
   // Function to determine weather condition
   const getWeatherCondition = () => {
@@ -19,6 +20,14 @@ const Home = () => {
       }
     }
     return 'Default';
+  };
+
+  //To scroll to Projects section upon button click
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   // Defined hooks to get weather data, check if weather container is open or not, set background image as per current weather
@@ -96,8 +105,11 @@ const Home = () => {
         }}>
         <h1>Hey! I am Vijay Krishna</h1>
         <p>A Full-stack web developer building modern websites and web applications that lead to the success of the overall product!</p>
+        <button className="scroll-button" onClick={() => scrollToSection('projects')}>
+          Projects
+        </button>
       </div>
-    </div>
+      </div>
   );
 };
 
