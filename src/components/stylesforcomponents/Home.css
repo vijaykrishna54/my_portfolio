@@ -1,120 +1,138 @@
 /* Styles for the Home component */
 .home-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #262215;
-    font-size: 25px;
-    text-align: center;
-    padding: 20px;
-    font-family: sans-serif;
-  }
-  
-  .text-container {
-    background-color: rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  /* Background images for different weather conditions */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #262215;
+  font-size: 25px;
+  text-align: center;
+  padding: 20px;
+  font-family: sans-serif;
+}
 
+.text-container {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
 
- /* Default background */
+/* Background images for different weather conditions */
+
+/* Default background */
 .default-background {
-    background-image: url('/public/images/blue_pattern.jpeg');
-  }
-  
-  /* Cloudy background */
-  .cloudy-background {
-    background-image: url('/public/images/cloudy_image.jpeg');
-  }
-  
-  /* Sunny background */
-  .sunny-background {
-    background-image: url('/public/images/sunny_image.jpeg');
-  }
-  
-  /* Rainy background */
-  .rainy-background {
-    background-image: url('/public/images/rainy_image.jpeg');
-  }
-  
-  
-  /* Styles for the weather container */
+  background-image: url('../component_images/blue_pattern.jpeg');
+}
+
+/* Cloudy background */
+.cloudy-background {
+  background-image: url('../component_images/cloudy_image.jpeg');
+}
+
+/* Sunny background */
+.sunny-background {
+  background-image: url('../component_images/sunny_image.jpeg');
+}
+
+/* Rainy background */
+.rainy-background {
+  background-image: url('../component_images/rainy_image.jpeg');
+}
+
+/* Styles for the weather container */
+.weather-container {
+  padding: 10px;
+  border-radius: 5px;
+  position: fixed;
+  top: 100px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  max-width: 200px;
+  transition: 0.3s;
+  /* display: none;  */
+}
+
+/* Styles for the weather container's text */
+.weather-container h2 {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+/* Styles for weather details */
+.weather-container p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* Styles for the open state of the weather container */
+.weather-container.open {
+  max-width: 200px;
+  display: block; /* Show the container when open */
+}
+
+/* Styles for the closed state of the weather container */
+.weather-container.closed {
+  max-width: 25px;
+  height: 25px;
+  overflow: hidden;
+  display: block; /* Show the container when closed, but make it smaller */
+}
+
+/* Close button styles */
+.close-button {
+  position: absolute;
+  top: -10px;
+  left: -9px;
+  border: none;
+  background: rgb(56, 55, 55);
+  border-radius: 70%;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px;
+  color: #fff;
+  outline: #48484a;
+}
+
+
+
+/* Toggle button styles */
+.toggle-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  background: rgb(56, 55, 55);
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px;
+  color: #fff;
+  outline: #48484a;
+  z-index: 1; /* Ensure the toggle button appears above the weather container */
+}
+
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens here */
   .weather-container {
-    padding: 10px;
-    border-radius: 5px;
-    position:fixed;
-    top: 100px;
+    top: 50px;
     right: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-    max-width: 200px;
-    transition: 0.3s; 
-  }
-  
-  /* Styles for the weather container's text */
-  .weather-container h2 {
-    margin-top: 0;
-    font-size: 16px;
-    font-weight: bold;
-    font-family: sans-serif;
-  }
-  
-  /* Styles for weather details */
-  .weather-container p {
-    margin: 5px 0;
-    font-size: 14px;
-  }
-  
-  /* Styles for the open state of the weather container */
-  .weather-container.open {
-    max-width: 200px;
-  }
-  
-  /* Styles for the closed state of the weather container */
-  .weather-container.closed {
-    max-width: 25px;
-    height: 25px;
-    overflow: hidden;
-  }
-  
-  /* Close button styles */
-  .close-button {
-    position: absolute;
-    top: -10px;
-    left: -9px;
-    border: none;
-    background: rgb(56, 55, 55);
-    border-radius: 70%;
-    font-size: 16px;
-    cursor: pointer;
-    padding: 5px;
-    color: #fff;
-    outline:#48484a;
-  }
-  
-  /* Media queries for responsiveness */
-  @media (max-width: 768px) {
-    /* Adjust styles for smaller screens here */
-    .weather-container {
-      top: 50px;
-      right: 10px;
-    }
-    
-    .home-container {
-      font-size: 20px;
-    }
   }
 
-  /* Style for the cloud icon */
-.cloud-icon {
-    font-size: 2rem; /* Adjust the font size as needed */
-    color: #48484a; /* Change the color to match your design */
-    align-items: center;
+  .home-container {
+    font-size: 20px;
   }
-  
-  
+}
+
+/* Style for the cloud icon */
+.cloud-icon {
+  font-size: 2rem; /* Adjust the font size as needed */
+  color: #48484a; /* Change the color to match your design */
+  align-items: center;
+}

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCloud } from '@fortawesome/free-solid-svg-icons';
+import { faCloud, faPlus, faTimes } from '@fortawesome/free-solid-svg-icons';
 import './stylesforcomponents/Home.css';
 
 const Home = () => {
@@ -21,24 +21,24 @@ const Home = () => {
     return 'Default';
   };
 
-  //Defined hooks to get weather data, check if weather container is open or not, set background image as per current weather
+  // Defined hooks to get weather data, check if weather container is open or not, set background image as per current weather
   const [weatherData, setWeatherData] = useState({});
-  const [weatherContainerOpen, setWeatherContainerOpen] = useState(true);
+  const [weatherContainerOpen, setWeatherContainerOpen] = useState(false); // Initially closed
   const [currentWeather, setCurrentWeather] = useState(getWeatherCondition());
 
-  //Defined API key here, later will be moved to .env file
-  const apiKey = '117b02e3aaa2af071272a21ccd6818ff'; 
+  // Defined API key here, later will be moved to .env file
+  const apiKey = '117b02e3aaa2af071272a21ccd6818ff';
 
-  //Defined city here, later will be changed as per user's location
-  const city = 'Vancouver'; 
+  // Defined city here, later will be changed as per user's location
+  const city = 'Vancouver';
   console.log(weatherData);
-  
+
   // Map weather conditions to background images
   const weatherBackgrounds = {
-    Cloudy: 'url(/public/images/cloudy_image.jpeg)',
-    Sunny: 'url(/public/images/sunny_image.jpeg)',
-    Rainy: 'url(/public/images/rainy_image.jpeg)',
-    Default: 'url(/public/images/blue_pattern.jpeg)',
+    Cloudy: 'url(/component_images/blue_pattern.jpeg)',
+    Sunny: 'url(/component_images/sunny_image.jpeg)',
+    Rainy: 'url(/component_images/rainy_image.jpeg)',
+    Default: 'url(/component_images/blue_pattern.jpeg)',
   };
 
   useEffect(() => {
@@ -62,17 +62,24 @@ const Home = () => {
 
   return (
     <div className="home-container">
-     
+      <button className={`toggle-button ${weatherContainerOpen ? 'open' : ''}`} onClick={toggleWeatherContainer}>
+        {weatherContainerOpen ? (
+          <FontAwesomeIcon icon={faTimes} />
+        ) : (
+          <FontAwesomeIcon icon={faPlus} />
+        )}
+      </button>
       <div
-        className={`weather-container ${weatherContainerOpen ? 'open' : 'closed'}`}
-        
+        className={`weather-container ${weatherContainerOpen ? 'open' : ''}`}
         style={{
           backgroundImage: weatherContainerOpen ? weatherBackgrounds[currentWeather] : weatherBackgrounds['Default'],
         }}
       >
-        <button className="close-button" onClick={toggleWeatherContainer}>
-          x
-        </button>
+        {weatherContainerOpen && (
+          <button className="close-button" onClick={toggleWeatherContainer}>
+            <FontAwesomeIcon icon={faTimes} />
+          </button>
+        )}
         {weatherContainerOpen ? (
           <>
             <h2>Weather Details</h2>
@@ -90,7 +97,6 @@ const Home = () => {
         <h1>Hey! I am Vijay Krishna</h1>
         <p>A Full-stack web developer building modern websites and web applications that lead to the success of the overall product!</p>
       </div>
-
     </div>
   );
 };
