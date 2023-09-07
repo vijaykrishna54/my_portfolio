@@ -1,39 +1,44 @@
 import React, { useState } from 'react';
 import './stylesforcomponents/Projects.css'; 
+import WeatherAppImage from './component_images/Weather_app.jpeg';
+import LoginPageImage from './component_images/login_page.jpeg';
+import EmailNotificationsImage from './component_images/email_notifications.jpeg';
+import GoogleOAuthImage from './component_images/google_oauth.jpeg';
+import WordPressImage from './component_images/word_press.jpeg';
 
 const projectsData = [
   {
     title: 'Weather App',
-    image: require('./component_images/Weather_app.jpeg'),
+    image: WeatherAppImage,
     description:
       'Weather apps serve a wide range of purposes, from helping individuals plan their daily activities to providing critical information during severe weather events. They are valuable tools for staying informed and prepared for various weather conditions.',
   },
   {
     title: 'Login Page',
-    image: require('./component_images/login_page.jpeg'),
+    image: LoginPageImage,
     description: 'Description of Project 2.',
   },
   {
     title: 'Email Notifications',
-    image: require('./component_images/email_notifications.jpeg'),
+    image: EmailNotificationsImage,
     description: 'Description of Project 3.',
   },
   {
     title: 'Google OAuth',
-    image: require('./component_images/google_oauth.jpeg'),
+    image: GoogleOAuthImage,
     description: 'Description of Project 4.',
   },
   {
     title: 'WordPress',
-    image: require('./component_images/word_press.jpeg'),
+    image: WordPressImage,
     description: 'Description of Project 5.',
   },
 ];
 
 const Project = ({ project, isActive, onClick }) => (
   <div className={`mySlides ${isActive ? 'active' : ''}`}>
-    <div className="numbertext">{project.index + 1} / {projectsData.length}</div>
-    <img src={project.image.default} style={{ width: '100%' }} alt={project.title} />
+   
+    <img src={project.image} style={{ width: '100%' }} alt={project.title} />
     <div className="caption-container">
       <p id="caption">{project.title}</p>
     </div>
@@ -54,7 +59,7 @@ const Projects = () => {
 
   return (
     <div className="container">
-      <h2>Projects</h2>
+      <h2>PROJECTS</h2>
       <p>Explore a selection of my personal projects, each accompanied by its own detailed case study</p>
       <div className="project-container">
         {projectsData.map((project, index) => (
@@ -77,7 +82,7 @@ const Projects = () => {
             <div className="column" key={index}>
               <button className="demo cursor" onClick={() => selectSlide(index)}>
                 <img
-                  src={project.image.default}
+                  src={project.image}
                   style={{ width: '100%' }}
                   alt={project.title}
                 />
