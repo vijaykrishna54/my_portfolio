@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className="profile-picture-container">
           <img src={profilePicture} alt="Profile" className="profile-picture" />
         </div>
-        <span className="name">VIJAY KRISHNA</span>
+        <span className="name" onClick={() => scrollToSection('home')}>VIJAY KRISHNA</span>
       </div>
       <ul>
         <li>
