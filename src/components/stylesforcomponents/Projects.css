@@ -1,3 +1,4 @@
+/* Styles for the projects container */
 .projects-container {
   text-align: center;
   padding: 150px;
@@ -43,14 +44,53 @@
 
 .case-study {
   margin-top: 20px;
-padding: 10px 20px;
-background-color: #3f3f3f;
-color: #fff;
-border: none;
-border-radius: 5px;
-cursor: pointer;
-font-size: 18px;
+  padding: 10px 20px;
+  background-color: #3f3f3f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
 }
 
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens here */
 
+  .projects-container {
+    padding: 50px; /* Reduce padding for smaller screens */
+  }
 
+  .heading {
+    font-size: 25px; /* Reduce font size for smaller screens */
+  }
+
+  .small-intro {
+    font-size: 18px; /* Reduce font size for smaller screens */
+  }
+
+  .content-container {
+    flex-direction: column; /* Stack containers vertically */
+  }
+
+  .description-container,
+  .image-container {
+    flex: 1; /* Equal flex values for both containers */
+    margin: 0; /* Remove margins for smaller screens */
+    padding: 0; /* Remove padding for smaller screens */
+    text-align: center; /* Center text for smaller screens */
+  }
+
+  .description-container {
+    font-size: 1rem; /* Reduce font size for smaller screens */
+  }
+
+  .project_name {
+    font-size: 1.2rem; /* Reduce font size for smaller screens */
+  }
+
+  .case-study {
+    font-size: 16px; /* Reduce font size for smaller screens */
+    padding: 8px 16px; /* Adjust padding for smaller screens */
+  }
+}

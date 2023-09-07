@@ -105,7 +105,7 @@ const Home = () => {
         }}>
         <h1>Hey! I am Vijay Krishna</h1>
         <p>A Full-stack web developer building modern websites and web applications that lead to the success of the overall product!</p>
-        <button className="scroll-button" onClick={() => scrollToSection('projects')}>
+        <button className="projects-link-button" onClick={() => scrollToSection('projects')}>
           Projects
         </button>
       </div>

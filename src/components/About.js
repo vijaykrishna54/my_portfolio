@@ -41,17 +41,7 @@ Please don't hesitate to connect with me on {' '}
   </a>
   .
 </p>
-
-
-
-
-
-
-
-
-
-
-          <button className="scroll-button" onClick={() => scrollToSection('contact')}>
+          <button className="contact-link-button" onClick={() => scrollToSection('contact')}>
             Contact
           </button>
         </div>

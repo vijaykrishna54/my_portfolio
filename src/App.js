@@ -4,6 +4,7 @@ import Home from './components/Home.js';
 import About from './components/About.js';
 import Projects from './components/Projects.js';
 import Contact from './components/Contact.js';
+import './App.css'
 
 
 //App should be actuall load from here...

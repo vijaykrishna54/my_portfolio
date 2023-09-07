@@ -12,13 +12,8 @@
   text-align: center;
   padding: 20px;
   font-family: sans-serif;
+  background-image: url(../component_images/blue_pattern.jpeg);
 }
-
-/* .text-container {
-  background-color: rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  border-radius: 10px;
-} */
 
 /* Background images for different weather conditions */
 
@@ -52,7 +47,6 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   max-width: 200px;
   transition: 0.3s;
-  /* display: none;  */
 }
 
 /* Styles for the weather container's text */
@@ -72,7 +66,7 @@
 /* Styles for the open state of the weather container */
 .weather-container.open {
   max-width: 200px;
-  display: block; /* Show the container when open */
+  display: block;
 }
 
 /* Styles for the closed state of the weather container */
@@ -80,7 +74,7 @@
   max-width: 25px;
   height: 25px;
   overflow: hidden;
-  display: block; /* Show the container when closed, but make it smaller */
+  display: block;
 }
 
 /* Close button styles */
@@ -98,8 +92,6 @@
   outline: #48484a;
 }
 
-
-
 /* Toggle button styles */
 .toggle-button {
   position: absolute;
@@ -113,31 +105,9 @@
   padding: 5px;
   color: #fff;
   outline: #48484a;
-  z-index: 1; /* Ensure the toggle button appears above the weather container */
+  z-index: 1;
 }
-
-
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
-  /* Adjust styles for smaller screens here */
-  .weather-container {
-    top: 50px;
-    right: 10px;
-  }
-
-  .home-container {
-    font-size: 20px;
-  }
-}
-
-/* Style for the cloud icon */
-.cloud-icon {
-  font-size: 2rem; /* Adjust the font size as needed */
-  color: #48484a; /* Change the color to match your design */
-  align-items: center;
-}
-
-.scroll-button {
+.projects-link-button{
   margin-top: 20px;
   padding: 10px 20px;
   background-color: #3f3f3f;
@@ -148,6 +118,45 @@
   font-size: 18px;
 }
 
-.scroll-button:hover{
+.projects-link-button{
   background-color: #0a0a0a;
+}
+
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens here */
+
+  .home-container {
+    font-size: 20px;
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .weather-container {
+    top: 50px;
+    right: 10px;
+    max-width: 150px; /* Adjust the maximum width for smaller screens */
+  }
+
+  .weather-container h2 {
+    font-size: 14px; /* Adjust font size for weather container text */
+  }
+
+  .weather-container p {
+    font-size: 12px; /* Adjust font size for weather details */
+  }
+
+  .toggle-button {
+    font-size: 14px; /* Adjust font size for the toggle button */
+    padding: 4px; /* Adjust padding for the toggle button */
+  }
+
+  .cloud-icon {
+    font-size: 1.5rem; /* Adjust the font size as needed */
+  }
+
+  .scroll-button {
+    font-size: 16px; /* Adjust font size for scroll button */
+    padding: 8px 16px; /* Adjust padding for scroll button */
+  }
 }

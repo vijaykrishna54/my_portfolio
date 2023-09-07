@@ -1,15 +1,13 @@
-
+/* Default styles */
 .about-container {
   text-align: center;
   padding: 150px;
 }
 
-
 .about-heading {
   font-size: 35px;
   margin-bottom: 50px;
 }
-
 
 .small-intro {
   font-family: sans-serif;
@@ -17,81 +15,120 @@
   margin-bottom: 100px;
 }
 
-
 .content-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 
-/* .details styles */
 .details {
   flex: 1;
-  margin: 0 1rem; /* Reduce margin-right for better alignment */
+  margin: 0 1rem;
   padding-top: 0px;
-  padding-right: 4rem; /* Adjust padding for better spacing */
-  font-size: 1.2rem; /* Increase font size for better readability */
+  padding-right: 4rem;
+  font-size: 1.2rem;
   font-family: sans-serif;
   text-align: justify;
 }
 
-/* .details h3 styles */
 .details h3 {
-  text-align: left; /* Align the heading to the left */
-  font-size: 1.5rem; /* Increase font size for better emphasis */
-  margin-bottom: 1rem; /* Adjust margin for better spacing */
+  text-align: left;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-/* .details p styles */
 .details p {
-  margin-bottom: 1.5rem; /* Adjust margin for better spacing */
+  margin-bottom: 1.5rem;
 }
 
-/* .side-content styles */
 .side-content {
   flex: 1;
   margin: 0 1rem;
 }
 
-/* .skills and .tools styles */
 .skills,
 .tools {
   background-color: #EAE7DC;
   border: 1px solid #EAE7DC;
   border-radius: 5px;
-  padding: 1rem; /* Adjust padding for better spacing */
+  padding: 1rem;
   margin-bottom: 2rem;
 }
 
-/* h3 styles */
 h3 {
-  font-size: 1.5rem; /* Increase font size for better emphasis */
-  margin-bottom: 1rem; /* Adjust margin for better spacing */
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
   margin-top: 0rem;
 }
 
-/* .skill-buttons and .tool-buttons styles */
 .skill-buttons,
 .tool-buttons {
   display: flex;
   flex-wrap: wrap;
 }
 
-/* .skill-button and .tool-button styles */
 .skill-button,
 .tool-button {
   background-color: #3f3f3f;
   color: #fff;
   border: none;
   border-radius: 5px;
-  padding: 0.5rem 1rem; /* Adjust padding for better spacing */
+  padding: 0.5rem 1rem;
   margin: 0.2rem;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
-/* .skill-button:hover and .tool-button:hover styles */
 .skill-button:hover,
 .tool-button:hover {
   background-color: #0a0a0a;
+}
+.contact-link-button{
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #3f3f3f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+
+.contact-link-button:hover{
+  background-color: #0a0a0a;
+}
+
+
+
+
+
+
+
+/* Responsive styles */
+
+/* For screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .about-container {
+    padding: 50px;
+  }
+
+  .small-intro {
+    margin-bottom: 50px;
+  }
+
+  .content-container {
+    flex-direction: column;
+  }
+
+  .details,
+  .side-content {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+  }
+
+  .details {
+    padding-right: 0;
+  }
 }

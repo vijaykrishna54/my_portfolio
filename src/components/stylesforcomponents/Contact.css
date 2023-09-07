@@ -1,69 +1,103 @@
 /* Contact Container */
 .contact-container {
-    text-align: center;
-    padding: 150px;
-  }
-  
-  /* Heading */
-  .contact-container h2 {
-    font-size: 35px;
-    margin-bottom: 50px;
-  }
-  
-  /* Paragraph */
-  .contact-container p {
-    font-size: 20px;
-    margin-bottom: 30px;
-    font-family: sans-serif;
-  }
-  
-  /* Form */
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  /* Form Group */
-  .form-group {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 400px;
-    margin-bottom: 15px;
-    text-align: left;
-  }
-  
-  /* Label */
-  .form-group label {
-    font-size: 18px;
-    margin-bottom: 5px;
-  }
-  
-  /* Input and Textarea */
-  .form-group input, 
-  .form-group textarea {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  
-  /* Submit Button */
-  button[type="submit"] {
-    background-color: #3f3f3f;
-    color: #fff;
-    font-size: 18px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  /* Submit Button Hover */
-  button[type="submit"]:hover {
-    background-color: #0a0a0a;
-  }
-  
+  text-align: center;
+  padding: 150px;
+}
+
+/* Heading */
+.contact-container h2 {
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+
+/* Paragraph */
+.contact-container p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-family: sans-serif;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Form Group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* Label */
+.form-group label {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* Input and Textarea */
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  background-color: #3f3f3f;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Submit Button Hover */
+button[type="submit"]:hover {
+  background-color: #0a0a0a;
+}
+
+/* Responsive Styles */
+
+/* For screens smaller than 768px */
+@media screen and (max-width: 768px) {
+.contact-container {
+  padding: 50px;
+}
+
+.contact-container h2 {
+  font-size: 25px;
+}
+
+.contact-container p {
+  font-size: 16px;
+}
+
+.form-group {
+  max-width: 100%;
+}
+
+.form-group label {
+  font-size: 16px;
+}
+
+.form-group input,
+.form-group textarea {
+  font-size: 14px;
+}
+
+button[type="submit"] {
+  font-size: 16px;
+  padding: 8px 16px;
+}
+}
