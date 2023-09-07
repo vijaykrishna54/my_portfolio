@@ -1,95 +1,36 @@
-import React, { useState } from 'react';
-import './stylesforcomponents/Projects.css'; 
-import WeatherAppImage from './component_images/Weather_app.jpeg';
-import LoginPageImage from './component_images/login_page.jpeg';
-import EmailNotificationsImage from './component_images/email_notifications.jpeg';
-import GoogleOAuthImage from './component_images/google_oauth.jpeg';
-import WordPressImage from './component_images/word_press.jpeg';
-
-const projectsData = [
-  {
-    title: 'Weather App',
-    image: WeatherAppImage,
-    description:
-      'Weather apps serve a wide range of purposes, from helping individuals plan their daily activities to providing critical information during severe weather events. They are valuable tools for staying informed and prepared for various weather conditions.',
-  },
-  {
-    title: 'Login Page',
-    image: LoginPageImage,
-    description: 'Description of Project 2.',
-  },
-  {
-    title: 'Email Notifications',
-    image: EmailNotificationsImage,
-    description: 'Description of Project 3.',
-  },
-  {
-    title: 'Google OAuth',
-    image: GoogleOAuthImage,
-    description: 'Description of Project 4.',
-  },
-  {
-    title: 'WordPress',
-    image: WordPressImage,
-    description: 'Description of Project 5.',
-  },
-];
-
-const Project = ({ project, isActive, onClick }) => (
-  <div className={`mySlides ${isActive ? 'active' : ''}`}>
-    <div className="image-container">
-      <img src={project.image} alt={project.title} />
-    </div>
-      
-    <div className="caption-container">
-      <p id="caption">{project.title}</p>
-      <p id="description">{project.description}</p>
-    </div>
-  </div>
-);
+import React from 'react';
+import './stylesforcomponents/Projects.css';
+import WeatherAppImage from './component_images/Weather_app.jpeg'; 
 
 const Projects = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const plusSlides = (n) => {
-    const newIndex = (currentSlide + n + projectsData.length) % projectsData.length;
-    setCurrentSlide(newIndex);
-  };
-
-  const selectSlide = (index) => {
-    setCurrentSlide(index);
-  };
-
   return (
-    <div className="container">
-      <h2>PROJECTS</h2>
-      <p>Explore a selection of my personal projects, each accompanied by its own detailed case study</p>
-      <div className="project-container">
-        {projectsData.map((project, index) => (
-          <Project
-            key={index}
-            project={{ ...project, index }}
-            isActive={currentSlide === index}
-          />
-        ))}
+    <div className="projects-container">
+      <h2 className='heading'>PROJECTS</h2>
+      <p className='small-intro'>Explore a selection of my personal projects, each accompanied by its own detailed case study</p>
 
-        <button className="prev" onClick={() => plusSlides(-1)}>
-          &#10094;
-        </button>
-        <button className="next" onClick={() => plusSlides(1)}>
-          &#10095;
-        </button>
-
-        <div className="row">
-          {projectsData.map((project, index) => (
-            <div className="column" key={index}>
-              <button className="demo cursor" onClick={() => selectSlide(index)}>
-                <img src={project.image} alt={project.title} />
-              </button>
-            </div>
-          ))}
+      <div className="content-container">
+       
+        <div className="image-container">
+          <img src={WeatherAppImage} alt="Weather App" /> 
         </div>
+
+        <div className="description-container">
+          <h2 className='project_name'>TaskWeather_Hub</h2>
+          <p>TaskWeather_Hub is a versatile and user-friendly React application that seamlessly combines two essential features - a to-do list and real-time weather information. It's designed to help you stay organized and informed, all in one place.</p>
+          <p>To-Do List: TaskWeather offers a robust to-do list manager. You can easily add, edit, and delete tasks. Tasks can be organized into categories or priorities, making it simple to stay on top of your daily, weekly, or monthly goals.</p>
+
+          <p>Weather Details: Stay informed about the weather conditions in your area or any location you choose. The app fetches real-time weather data, including temperature, humidity, wind speed, and more. You can view current weather conditions and forecasts to plan your day accordingly.</p>
+        </div>
+
       </div>
+
+      <div>
+      <button className="scroll-button">
+            Case Study
+          </button>
+      </div>
+
+
     </div>
   );
 };

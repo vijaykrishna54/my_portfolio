@@ -26,8 +26,8 @@
 
 /* .details styles */
 .details {
-  flex: 2;
-  margin-right: 1rem; /* Reduce margin-right for better alignment */
+  flex: 1;
+  margin: 0 1rem; /* Reduce margin-right for better alignment */
   padding-top: 0px;
   padding-right: 4rem; /* Adjust padding for better spacing */
   font-size: 1.2rem; /* Increase font size for better readability */
@@ -50,6 +50,7 @@
 /* .side-content styles */
 .side-content {
   flex: 1;
+  margin: 0 1rem;
 }
 
 /* .skills and .tools styles */

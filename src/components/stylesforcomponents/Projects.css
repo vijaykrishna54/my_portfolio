@@ -1,115 +1,56 @@
-.container {
+.projects-container {
   text-align: center;
   padding: 150px;
 }
 
-.container h2 {
+.heading {
   font-size: 35px;
+  margin-bottom: 50px;
 }
 
-.container p {
+.small-intro {
   font-family: sans-serif;
   font-size: 20px;
   margin-bottom: 50px;
 }
-.project-container{
-  background-color: rgb(11, 11, 201);
-  padding: 10px;
-  position: relative;
+
+.content-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center; 
+  justify-content: center; /* Center both containers horizontally */
+  margin-bottom: 50px;
 }
 
-
-/* Project card styles */
-.mySlides {
-  display:none;
-  max-width: 800px;
-  width: 100%;   
-  flex: 1;
-  display: none;
-}
-
-.mySlides.active {
-  display:flex;
-}
-
-.mySlides img {
-  width: 50%;
-  height: auto;
-  padding-right: 10px;
-}
-
-/* Navigation buttons styles */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  color: rgb(13, 1, 1);
-  font-weight: bold;
-  font-size: 10px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-.prev {
-  left: 0;
-  transform: translateY(-50%);
-}
-
-.next {
-  right: 0;
-  transform: translateY(-50%);
-}
-
-.prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-}
-
-/* Image text styles */
-.caption-container {
-  text-align: center;
-  color:  rgb(13, 1, 1);
-  font-size: 20px;
-  background-color: #EAE7DC;
-  flex: 2;
-  margin-right: 0rem; /* Reduce margin-right for better alignment */
-  padding-right: 25rem; /* Adjust padding for better spacing */
-  font-size: 1.2rem; /* Increase font size for better readability */
+.description-container {
+  flex: 1; /* Set equal flex values for both containers */
+  margin: 0 1rem; /* Adjust margins for spacing */
+  font-size: 1.2rem;
   font-family: sans-serif;
   text-align: justify;
 }
 
-/* Row of small images styles */
-.row {
-  display: flex;
-  justify-content: center;
-  height: auto;
-  width: auto;
-  padding-top: 10px;
-}
-
-.column {
-  flex: 50%;
-  padding: 5px;
+.project_name {
   text-align: center;
+  font-size: 1.5rem;
+  margin: 0 1rem;
 }
 
-.demo {
-  opacity: 0.6;
-  transition: 0.3s;
+.image-container {
+  flex: 1; /* Set equal flex values for both containers */
+  margin: 0 1rem; /* Adjust margins for spacing */
+  padding-right: 4rem;
 }
 
-/* Set a fixed height and width for the images within .column */
-.demo img {
-  width: 100%; /* Adjust this value to your desired width */
-  height: auto;
+.case-study {
+  margin-top: 20px;
+padding: 10px 20px;
+background-color: #3f3f3f;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 18px;
 }
-.demo:hover {
-  opacity: 1;
-}
+
+
+
