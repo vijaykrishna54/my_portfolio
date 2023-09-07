@@ -5,6 +5,8 @@ import About from './components/About.js';
 import Projects from './components/Projects.js';
 import Contact from './components/Contact.js';
 
+
+//App should be actuall load from here...
 const App = () => {
   return (
     <div>
