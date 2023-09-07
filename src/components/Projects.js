@@ -37,10 +37,13 @@ const projectsData = [
 
 const Project = ({ project, isActive, onClick }) => (
   <div className={`mySlides ${isActive ? 'active' : ''}`}>
-   
-    <img src={project.image} style={{ width: '100%' }} alt={project.title} />
+    <div className="image-container">
+      <img src={project.image} alt={project.title} />
+    </div>
+      
     <div className="caption-container">
       <p id="caption">{project.title}</p>
+      <p id="description">{project.description}</p>
     </div>
   </div>
 );
@@ -81,11 +84,7 @@ const Projects = () => {
           {projectsData.map((project, index) => (
             <div className="column" key={index}>
               <button className="demo cursor" onClick={() => selectSlide(index)}>
-                <img
-                  src={project.image}
-                  style={{ width: '100%' }}
-                  alt={project.title}
-                />
+                <img src={project.image} alt={project.title} />
               </button>
             </div>
           ))}

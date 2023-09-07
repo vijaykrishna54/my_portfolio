@@ -13,16 +13,23 @@
   margin-bottom: 50px;
 }
 .project-container{
-  background-color: blue;
+  background-color: rgb(11, 11, 201);
   padding: 10px;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; 
 }
+
 
 /* Project card styles */
 .mySlides {
   display:none;
   max-width: 800px;
-  width: 50%;
+  width: 100%;   
+  flex: 1;
+  display: none;
 }
 
 .mySlides.active {
@@ -30,6 +37,7 @@
 }
 
 .mySlides img {
+  width: 50%;
   height: auto;
   padding-right: 10px;
 }
@@ -66,11 +74,15 @@
 /* Image text styles */
 .caption-container {
   text-align: center;
-  padding: 10px 16px;
   color:  rgb(13, 1, 1);
   font-size: 20px;
   background-color: #EAE7DC;
-  width: 100%;
+  flex: 2;
+  margin-right: 0rem; /* Reduce margin-right for better alignment */
+  padding-right: 25rem; /* Adjust padding for better spacing */
+  font-size: 1.2rem; /* Increase font size for better readability */
+  font-family: sans-serif;
+  text-align: justify;
 }
 
 /* Row of small images styles */
@@ -79,11 +91,13 @@
   justify-content: center;
   height: auto;
   width: auto;
+  padding-top: 10px;
 }
 
 .column {
   flex: 50%;
   padding: 5px;
+  text-align: center;
 }
 
 .demo {
@@ -91,6 +105,11 @@
   transition: 0.3s;
 }
 
+/* Set a fixed height and width for the images within .column */
+.demo img {
+  width: 100%; /* Adjust this value to your desired width */
+  height: auto;
+}
 .demo:hover {
   opacity: 1;
 }
