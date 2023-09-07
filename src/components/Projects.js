@@ -25,7 +25,7 @@ const Projects = () => {
       </div>
 
       <div>
-      <button className="scroll-button">
+      <button className="case-study">
             Case Study
           </button>
       </div>
