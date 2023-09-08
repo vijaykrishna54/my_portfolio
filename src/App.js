@@ -4,7 +4,7 @@ import Home from './components/Home.js';
 import About from './components/About.js';
 import Projects from './components/Projects.js';
 import Contact from './components/Contact.js';
-import Footer from './components/Footer.js'; // Import the Footer component
+import Footer from './components/Footer.js';
 import './App.css'
 
 const App = () => {
@@ -23,7 +23,7 @@ const App = () => {
       <div id="contact">
         <Contact />
       </div>
-      <Footer /> {/* Add the Footer component here */}
+      <Footer /> 
     </div>
   );
 };

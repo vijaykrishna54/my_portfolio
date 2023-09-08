@@ -1,20 +1,35 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import './stylesforcomponents/Contact.css';
 
 const Contact = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_jshjuoj', 'template_vqsn8j8', form.current, 's-OjtRcMWpJQeY0je')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
   return (
     <div className="contact-container">
      
       <h2>CONTACT</h2>
       <p>Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</p>
       <div className='card'>
-      <form>
+      <form ref={form} onSubmit={sendEmail}>
         <div className="form-group">
           <label htmlFor="name">Name</label>
           <input
             type="text"
-            id="name"
-            name="name"
+            id="user_name"
+            name="user_name"
             placeholder="Enter your name"
             required
           />
@@ -23,8 +38,8 @@ const Contact = () => {
           <label htmlFor="email">Email</label>
           <input
             type="email"
-            id="email"
-            name="email"
+            id="user_email"
+            name="user_email"
             placeholder="Enter your email"
             required
           />
@@ -38,7 +53,7 @@ const Contact = () => {
             required
           ></textarea>
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit" value="Send">Submit</button>
       </form>
       </div>
     </div>
@@ -46,3 +61,17 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
+
+  // return (
+  //   <form ref={form} onSubmit={sendEmail}>
+  //     <label>Name</label>
+  //     <input type="text" name="user_name" />
+  //     <label>Email</label>
+  //     <input type="email" name="user_email" />
+  //     <label>Message</label>
+  //     <textarea name="message" />
+  //     <input type="submit" value="Send" />
+  //   </form>
+  // );
