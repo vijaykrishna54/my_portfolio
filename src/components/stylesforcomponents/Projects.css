@@ -1,8 +1,7 @@
 /* Styles for the projects container */
 .projects-container {
   text-align: center;
-  padding-top: 150px;
-  padding-bottom: 80px;
+  padding: 150px;
 }
 
 .heading {

@@ -4,10 +4,9 @@ import Home from './components/Home.js';
 import About from './components/About.js';
 import Projects from './components/Projects.js';
 import Contact from './components/Contact.js';
+import Footer from './components/Footer.js'; // Import the Footer component
 import './App.css'
 
-
-//App should be actuall load from here...
 const App = () => {
   return (
     <div>
@@ -24,6 +23,7 @@ const App = () => {
       <div id="contact">
         <Contact />
       </div>
+      <Footer /> {/* Add the Footer component here */}
     </div>
   );
 };
