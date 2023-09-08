@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.73b63718.css",
+    "main.css": "/static/css/main.193a52ee.css",
     "main.js": "/static/js/main.8e678d5c.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/cloudy_image.jpeg": "/static/media/cloudy_image.a88d501a80a8b88c23a4.jpeg",
     "static/media/Vijay_profile_picture.jpeg": "/static/media/Vijay_profile_picture.3ff3c110f6e11964cda5.jpeg",
     "static/media/Weather_app.jpeg": "/static/media/Weather_app.463905db89dcf28ec4da.jpeg",
     "static/media/rainy_image.jpeg": "/static/media/rainy_image.a4a1c8ec6929d3024cb1.jpeg",
+    "static/media/lamp.jpeg": "/static/media/lamp.cbb9932ffd9796a04f46.jpeg",
     "static/media/sunny_image.jpeg": "/static/media/sunny_image.31565611dbc0b8fd1bc3.jpeg",
     "static/media/blue_pattern.jpeg": "/static/media/blue_pattern.58588091ca2c15c82c69.jpeg",
     "index.html": "/index.html",
-    "main.73b63718.css.map": "/static/css/main.73b63718.css.map",
+    "main.193a52ee.css.map": "/static/css/main.193a52ee.css.map",
     "main.8e678d5c.js.map": "/static/js/main.8e678d5c.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.73b63718.css",
+    "static/css/main.193a52ee.css",
     "static/js/main.8e678d5c.js"
   ]
 }
