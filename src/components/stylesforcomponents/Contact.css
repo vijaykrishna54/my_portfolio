@@ -2,12 +2,16 @@
 .contact-container {
   text-align: center;
   padding: 150px;
+ 
 }
 
 /* Heading */
 .contact-container h2 {
   font-size: 35px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #000;
+  font-family: sans-serif;
 }
 
 /* Paragraph */
@@ -16,28 +20,32 @@
   margin-bottom: 30px;
   font-family: sans-serif;
 }
-
-/* Form */
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.card{
+  background-color: #EAE7DC;
+  border: none;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; /* Rounded corners for the card */
+  z-index: 1;
+  padding: 30px;
+  padding-right: 50px;
+  width: 60%;
+  margin-left: 230px;
 }
 
 /* Form Group */
 .form-group {
-  display: flex;
+  display:flex;
   flex-direction: column;
-  width: 100%;
-  max-width: 400px;
   margin-bottom: 15px;
   text-align: left;
+  
 }
 
 /* Label */
 .form-group label {
   font-size: 18px;
   margin-bottom: 5px;
+  font-family: sans-serif;
 }
 
 /* Input and Textarea */
@@ -45,21 +53,23 @@ form {
 .form-group textarea {
   padding: 10px;
   font-size: 16px;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   border-radius: 5px;
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
+  font-family: sans-serif;
 }
 
 /* Submit Button */
 button[type="submit"] {
+  margin-top: 20px;
+  padding: 10px 20px;
   background-color: #3f3f3f;
   color: #fff;
-  font-size: 18px;
-  padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 18px;
 }
 
 /* Submit Button Hover */

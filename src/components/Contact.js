@@ -4,8 +4,10 @@ import './stylesforcomponents/Contact.css';
 const Contact = () => {
   return (
     <div className="contact-container">
+     
       <h2>CONTACT</h2>
       <p>Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</p>
+      <div className='card'>
       <form>
         <div className="form-group">
           <label htmlFor="name">Name</label>
@@ -38,6 +40,7 @@ const Contact = () => {
         </div>
         <button type="submit">Submit</button>
       </form>
+      </div>
     </div>
   );
 };
