@@ -85,6 +85,9 @@ li a:hover {
     padding-left: 20px; /* Reduce left padding */
     margin-bottom: 10px; /* Add margin to separate elements */
   }
+  .mobile-menu {
+    display: flex; /* Show mobile menu */
+  }
 
   ul {
     flex-direction: column; /* Stack menu items vertically */
