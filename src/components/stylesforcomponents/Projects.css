@@ -18,7 +18,7 @@
 .content-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center both containers horizontally */
+  justify-content: space-evenly; /* Center both containers horizontally */
   margin-bottom: 50px;
 }
 
