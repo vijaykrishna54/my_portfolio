@@ -18,7 +18,7 @@
 .contact-container p {
   font-size: 20px;
   margin-bottom: 30px;
-  font-family: sans-serif;
+ 
 }
 .card{
   background-color: #EAE7DC;
@@ -45,7 +45,7 @@
 .form-group label {
   font-size: 18px;
   margin-bottom: 5px;
-  font-family: sans-serif;
+
 }
 
 /* Input and Textarea */
@@ -57,7 +57,7 @@
   border-radius: 5px;
   width: 100%;
   margin-bottom: 0px;
-  font-family: sans-serif;
+
 }
 
 /* Submit Button */

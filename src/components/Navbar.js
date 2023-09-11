@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './stylesforcomponents/Navbar.css';
-import profilePicture from './component_images/Vijay_profile_picture.jpeg'; // Import your profile picture
+import profilePicture from './component_images/Vijay_profile_picture.jpeg'; 
 
 const Navbar = () => {
   const scrollToSection = (sectionId) => {
@@ -32,7 +32,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="navbar">
+    <nav id="navbar">
       <div className="left-content">
         <div className="profile-picture-container">
           <img src={profilePicture} alt="Profile" className="profile-picture" />
@@ -42,46 +42,51 @@ const Navbar = () => {
         </span>
       </div>
       {window.innerWidth <= 768 ? (
-        // Show hamburger menu on mobile screens
+       
         <button className="hamburger-button" onClick={toggleMobileMenu}>
           ☰
         </button>
       ) : (
-        // Show all options on laptop screens
-        <ul>
+        // laptop menu
+        <ul className='laptop-nav-links'>
           <li>
-            <button onClick={() => scrollToSection('home')}>HOME</button>
+            <button className='Nav-item' onClick={() => scrollToSection('home')}>HOME</button>
           </li>
           <li>
-            <button onClick={() => scrollToSection('about')}>ABOUT</button>
+            <button className='Nav-item' onClick={() => scrollToSection('about')}>ABOUT</button>
           </li>
           <li>
-            <button onClick={() => scrollToSection('projects')}>PROJECTS</button>
+            <button className='Nav-item' onClick={() => scrollToSection('projects')}>PROJECTS</button>
           </li>
           <li>
-            <button onClick={() => scrollToSection('contact')}>CONTACT</button>
+            <button className='Nav-item' onClick={() => scrollToSection('contact')}>CONTACT</button>
           </li>
         </ul>
+        
       )}
 
       {/* Mobile menu */}
       {isMobileMenuOpen && (
-        <div className="mobile-menu">
-          <ul>
+
+
+
+          <ul className="mobile-menu">
             <li>
-              <button onClick={() => scrollToSection('home')}>HOME</button>
+              <button onClick={() => scrollToSection('home') && toggleMobileMenu()}>HOME</button>
             </li>
             <li>
-              <button onClick={() => scrollToSection('about')}>ABOUT</button>
+              <button onClick={() => scrollToSection('about') && toggleMobileMenu()}>ABOUT</button>
             </li>
             <li>
-              <button onClick={() => scrollToSection('projects')}>PROJECTS</button>
+              <button onClick={() => scrollToSection('projects') && toggleMobileMenu()}>PROJECTS</button>
             </li>
             <li>
-              <button onClick={() => scrollToSection('contact')}>CONTACT</button>
+              <button onClick={() => scrollToSection('contact') && toggleMobileMenu()}>CONTACT</button>
             </li>
           </ul>
-        </div>
+
+          
+     
       )}
     </nav>
   );

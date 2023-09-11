@@ -10,7 +10,7 @@
 }
 
 .small-intro {
-  font-family: sans-serif;
+ 
   font-size: 20px;
   margin-bottom: 50px;
 }
@@ -26,7 +26,7 @@
   flex: 1; /* Set equal flex values for both containers */
   margin: 0 1rem; /* Adjust margins for spacing */
   font-size: 1.2rem;
-  font-family: sans-serif;
+
   text-align: justify;
 }
 
